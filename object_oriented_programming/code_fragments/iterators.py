@@ -42,9 +42,6 @@ class SequenceIterator:
         return result
 
 
-
-
-
 si = SquareIterator(8, 2)
 for i in si:
     print(i)
