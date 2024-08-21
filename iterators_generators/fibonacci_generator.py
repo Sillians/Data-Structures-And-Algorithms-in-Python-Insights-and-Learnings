@@ -8,4 +8,4 @@ def fibonacci_generator(stop=10):
         yield current_fib
 
 
-print(list(fibonacci_generator(15c)))
+print(list(fibonacci_generator(15)))
