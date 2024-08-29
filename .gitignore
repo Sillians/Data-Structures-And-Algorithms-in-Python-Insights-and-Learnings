@@ -1,3 +1,5 @@
 #ignore the virtual environment
 venv/
 .DS_Store
+**/__pycache__/
+__pycache__/
