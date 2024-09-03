@@ -33,6 +33,3 @@ class Sequence(metaclass=ABCMeta):
                 k += 1
         return k
 
-
-# class Range(Sequence):
-#     pass
