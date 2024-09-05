@@ -11,3 +11,5 @@ Append your project’s root directory to PYTHONPATH — In any environment you 
 vagrant or your virtual environment i.e. in bin/activate, run (or e.g. add to bin/activate in case you are using virtualenv) the below command:
 
 `export PYTHONPATH="${PYTHONPATH}:/path/to/your/project/"`
+
+/Users/user/Projects/Data-Structures-And-Algorithms-in-Python-Insights-and-Learnings/object_oriented_programming

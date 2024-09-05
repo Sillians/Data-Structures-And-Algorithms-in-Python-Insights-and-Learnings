@@ -17,9 +17,10 @@ class PredatoryCreditCard(CreditCard):
             monthly_factor = pow(1 + self._apr, 1/12)
             # monthly_factor = (1+self._apr)**(1/12)
             self._balance *= monthly_factor
-            # return self._balance
+            return self._balance
 
 
 pcc = PredatoryCreditCard("Dorcas Mark", "CitiBankPLC", "8753 9834 65750 2453", 15000, 5)
-pcc.charge(20000)
+pcc.charge(2000)
 print(pcc.get_balance())
+print(pcc.process_month())
