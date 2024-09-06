@@ -1,3 +1,4 @@
+import numbers
 from typing import Any
 
 class CreditCard:
@@ -40,6 +41,9 @@ class CreditCard:
         """Return current balance"""
         return self._balance
 
+    def _set_balance(self, balance):
+        self._balance = balance
+
     def charge(self, price: float):
         """Charge given price to the card, assuming sufficient credit limit
 
@@ -53,6 +57,13 @@ class CreditCard:
 
     def make_payment(self, amount: float):
         """Process customer payment that reduces balance"""
+        try:
+            assert isinstance(amount, numbers.Number)
+        except AssertionError:
+            print("Amount must be a number, integer or float.")
+            return
+        if amount <= 0:
+            print("The provided amount must be a positive number.")
         self._balance -= amount
 
 

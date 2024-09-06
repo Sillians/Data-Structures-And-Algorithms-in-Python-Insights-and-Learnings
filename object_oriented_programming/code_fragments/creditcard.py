@@ -57,30 +57,30 @@ class CreditCard:
 
 
 if __name__ == "__main__":
-    card = CreditCard('Jordan Clarkson', 'CitiBank', '6383 9846 2534 4942', 2000)
+    # card = CreditCard('Jordan Clarkson', 'CitiBank', '6383 9846 2534 4942', 2000)
     # card.charge(5000)
 
 
-    # wallet = []
-    # wallet.append(CreditCard('Rubin Richard', 'CitiBank', '6477 2537 9484 2927', 1500))
-    # wallet.append(CreditCard('John Hopkins', 'Access bank', '7575 3839 2453 2964', 2500))
-    # wallet.append(CreditCard('Luke Mick', 'Bank of America', '7554 2839 8293 2948', 3500))
-    #
-    # for val in range(1, 20):
-    #     wallet[0].charge(val)
-    #     wallet[1].charge(2*val)
-    #     wallet[2].charge(3*val)
-    #
-    # for c in range(3):
-    #     print('Customer =', wallet[c].get_customer())
-    #     print('Bank =', wallet[c].get_bank())
-    #     print('Account Number =', wallet[c].get_account())
-    #     print('Limit =', wallet[c].get_limit())
-    #     print('Balance =', wallet[c].get_balance())
-    #     while wallet[c].get_balance() > 100:
-    #         wallet[c].make_payment(100)
-    #         print('New balance =', wallet[c].get_balance())
-    #     print()
+    wallet = []
+    wallet.append(CreditCard('Rubin Richard', 'CitiBank', '6477 2537 9484 2927', 1500))
+    wallet.append(CreditCard('John Hopkins', 'Access bank', '7575 3839 2453 2964', 2500))
+    wallet.append(CreditCard('Luke Mick', 'Bank of America', '7554 2839 8293 2948', 3500))
+
+    for val in range(1, 20):
+        wallet[0].charge(val)
+        wallet[1].charge(2*val)
+        wallet[2].charge(3*val)
+
+    for c in range(3):
+        print('Customer =', wallet[c].get_customer())
+        print('Bank =', wallet[c].get_bank())
+        print('Account Number =', wallet[c].get_account())
+        print('Limit =', wallet[c].get_limit())
+        print('Balance =', wallet[c].get_balance())
+        while wallet[c].get_balance() > 100:
+            wallet[c].make_payment(100)
+            print('New balance =', wallet[c].get_balance())
+        print()
 
 
 

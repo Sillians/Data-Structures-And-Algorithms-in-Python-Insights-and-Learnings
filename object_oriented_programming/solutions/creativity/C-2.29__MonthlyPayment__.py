@@ -50,5 +50,5 @@ pccm.charge(3000)
 pccm.process_month()
 print(pccm.get_balance(), pccm._minimum_payment)
 
-# pccm.process_month()
-# print(pccm.get_balance(), pccm._minimum_payment)
+pccm.process_month()
+print(pccm.get_balance(), pccm._minimum_payment)
