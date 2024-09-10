@@ -1,2 +1,5 @@
 setuptools
 pydantic
+altair
+numpy
+pandas

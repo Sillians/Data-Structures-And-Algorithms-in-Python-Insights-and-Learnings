@@ -1,0 +1,3 @@
+Return the string obtained by replacing the leftmost nonoverlapping occurrences of
+pattern in the string by the replacement repl. If the pattern isn’t found, the string is returned unchanged,” '
+according to Python’s documentation.
