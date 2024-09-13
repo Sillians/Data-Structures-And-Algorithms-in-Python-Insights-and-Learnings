@@ -42,7 +42,8 @@ requires that it will do well on every input. That is, designing for the worst c
 algorithmic “muscles,” much like a track star who always practices by running up an incline.
 
 ### The seven functions used in the analysis of algorithms
-1. The Constant function
+1. The Constant function:
+
 The simplest function we can think of is the constant function. This is the function, `f(n) = c`, for some fixed constant c.
 such as c=5, c=27, or c=210. That is, for any argument `n`, the constant function `f(n)` assigns the value c. 
 In other words, it does not matter what the value of `n` is; `f(n)` will always be equal to the constant value c.
@@ -52,7 +53,8 @@ of steps needed to do a basic operation on a computer, like adding two numbers, 
 variable, or comparing two numbers.
 
 
-2. The Logarithm function
+2. The Logarithm function:
+
 One of the interesting and sometimes even surprising aspects of the analysis of data structures and algorithms is the ubiquitous presence of the logarithm function,
 `f(n)` = $log{_b}{n}$, for some constant `b > 1`. This function is defined as follows: x = $log{_b}{n}$ if and only if $b^x=n$.
 
@@ -74,7 +76,8 @@ The following proposition describes several important identities that involve lo
 - $b^{log{_d}{a}}$ = $a^{log{_d}{b}}$
 
 
-3. The Linear function
+3. The Linear function:
+
 Another simple yet important function is the linear function, `f(n) = n.`
 That is, given an input value `n`, the linear function `f` assigns the value `n` itself. This function arises in algorithm analysis any time we have to do a single basic operation for each of n elements.
 
