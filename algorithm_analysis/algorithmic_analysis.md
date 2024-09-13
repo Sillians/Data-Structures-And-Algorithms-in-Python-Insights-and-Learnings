@@ -56,7 +56,7 @@ variable, or comparing two numbers.
 One of the interesting and sometimes even surprising aspects of the analysis of data structures and algorithms is the ubiquitous presence of the logarithm function,
 `f(n)` = $log{_b}{n}$, for some constant `b > 1`. This function is defined as follows:
 
-        x=$log{_b}{n}$ if and only if $b^x=n$.
+x=$log{_b}{n}$ if and only if $b^x=n$.
 
 By definition, $log{_b}{1}$ = 0`. The value `b` is known as the base of the logarithm.
 
@@ -77,8 +77,7 @@ The following proposition describes several important identities that involve lo
 
 
 3. The Linear function
-Another simple yet important function is the linear function, 
-        `f(n) = n.`
+Another simple yet important function is the linear function, `f(n) = n.`
 That is, given an input value `n`, the linear function `f` assigns the value `n` itself. This function arises in algorithm analysis any time we have to do a single basic operation for each of n elements.
 
 
