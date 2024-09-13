@@ -68,11 +68,12 @@ That is, for us, $log{n}$ = $log{_2}{n}$.
 The following proposition describes several important identities that involve logarithms for any base greater than 1.
 
 - Proposition(Logarithm Rules): Given real numbers a > 0, b > 1, c > 0 and d > 1, we have:
-1. $log{_b}{(ac)}$ = $log{_b}a$ + $log{_b}c$ 
-2. $log{_b}(a/c)$ = $log{_b}{a}$ − $log{_b}{c}$ 
-3. $log{_b}(ac)$ = $clog{_b}{a}$
-4. $log{_b} a$ = $log{_d}{a}$ / $log{_d}{b}$
-5. $b^{log{_d}{a}}$ = $a^log{_d}{b}$
+
+- $log{_b}{(ac)}$ = $log{_b}a$ + $log{_b}c$ 
+- $log{_b}(a/c)$ = $log{_b}{a}$ − $log{_b}{c}$ 
+- $log{_b}a^{c}$ = $clog{_b}{a}$
+- $log{_b} a$ = $log{_d}{a}$ / $log{_d}{b}$
+- $b^{log{_d}{a}}$ = $a^{log{_d}{b}}$
 
 
 3. The Linear function
