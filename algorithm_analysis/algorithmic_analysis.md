@@ -82,20 +82,63 @@ Another simple yet important function is the linear function, `f(n) = n.`
 That is, given an input value `n`, the linear function `f` assigns the value `n` itself. This function arises in algorithm analysis any time we have to do a single basic operation for each of n elements.
 
 
+4. The N-Log N function:
+
+The n-log-n function, given as; `f(n) = nlogn`. that is, the function that assigns to an input `n` the value of `n` times the logarithm base-two of `n`. 
+This function grows a little more rapidly than the linear function and a lot less rapidly than the quadratic function;
+therefore, we would greatly prefer an algorithm with a running time that is proportional to `nlogn`, 
+than one with quadratic running time. 
+
+
+5. The Quadratic function:
+
+Another function that appears often in algorithm analysis is the quadratic function, `f(n)` = n^{2}. 
+That is, given an input value `n`, the function `f` assigns the product of `n` with itself (in other words, “n squared”).
+
+The main reason why the quadratic function appears in the analysis of algorithms is that there are many algorithms 
+that have nested loops, where the inner loop performs a linear number of operations and the outer loop is performed 
+a linear number of times. Thus, in such cases, the algorithm performs n·n = n^{2} operations.
+
+
+6. The Cubic function and other Polynomials:
+
+The cubic function, `f(n)` = n^{3}, which assigns to an input value n the product of n with itself three times. 
+This func- tion appears less frequently in the context of algorithm analysis than the constant, linear, 
+and quadratic functions previously mentioned, but it does appear from time to time.
+
+- Polynomials
+
+Most of the functions we have listed so far can each be viewed as being part of a larger class of functions, the `polynomials`. 
+A polynomial function has the form, `f(n)` = $a{_0}$ + $a{_1}n$ + $a{_2}n^{2}$ + $a{_3}n^{3}$ +···+ $a{_d}n^{d}$. 
+
+where $a{_0}$, $a{_1}$ , . . . , $a{_d}$ are constants, called the coefficients of the polynomial, 
+and $a{_d}$ != 0. Integer `d`, which indicates the highest power in the polynomial, is called the degree of the polynomial.
+
+Running times that are polynomials with small degree are generally better than polynomial running times with larger degree.
+
+
+7. The Exponential function:
+
+Another function used in the analysis of algorithms is the exponential function, `f(n)` = $b^{n}$. 
+where b is a positive constant, called the `base`, and the argument `n` is the `exponent`. 
+That is, function `f(n)` assigns to the input argument `n` the value obtained by multiplying the base `b` by itself `n` times. 
+As was the case with the logarithm function, the most common base for the exponential function in algorithm analysis is `b=2`. 
 
 
 
 
 
 
-4. The N-Log N function 
-5. The Quadratic function 
-6. The Cubic function 
-7. The Exponential function
 
 
 
-$log{_2}{n}$
+
+
+
+
+
+
+
 
 
 
