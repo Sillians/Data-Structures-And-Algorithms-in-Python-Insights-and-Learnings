@@ -54,9 +54,7 @@ variable, or comparing two numbers.
 
 2. The Logarithm function
 One of the interesting and sometimes even surprising aspects of the analysis of data structures and algorithms is the ubiquitous presence of the logarithm function,
-`f(n)` = $log{_b}{n}$, for some constant `b > 1`. This function is defined as follows:
-
-x=$log{_b}{n}$ if and only if $b^x=n$.
+`f(n)` = $log{_b}{n}$, for some constant `b > 1`. This function is defined as follows: x = $log{_b}{n}$ if and only if $b^x=n$.
 
 By definition, $log{_b}{1}$ = 0`. The value `b` is known as the base of the logarithm.
 
