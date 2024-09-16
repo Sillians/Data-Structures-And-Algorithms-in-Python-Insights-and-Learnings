@@ -109,9 +109,9 @@ and quadratic functions previously mentioned, but it does appear from time to ti
 - Polynomials
 
 Most of the functions we have listed so far can each be viewed as being part of a larger class of functions, the `polynomials`. 
-A polynomial function has the form, `f(n)` = $a{_0}$ + $a{_1}n$ + $a{_2}n^{2}$ + $a{_3}n^{3}$ +···+ $a{_d}n^{d}$. 
+A polynomial function has the form, `f(n)` = $a{_0}$ + $a{_1}n$ + $a{_2}n^{2}$ + $a{_3}n^{3}$ +$\ldots$+ $a{_d}n^{d}$. 
 
-where $a{_0}$, $a{_1}$ , . . . , $a{_d}$ are constants, called the coefficients of the polynomial, 
+where $a{_0}$, $a{_1}$ , $\ldots$ , $a{_d}$ are constants, called the coefficients of the polynomial, 
 and $a{_d}$ != 0. Integer `d`, which indicates the highest power in the polynomial, is called the degree of the polynomial.
 
 Running times that are polynomials with small degree are generally better than polynomial running times with larger degree.
@@ -125,11 +125,68 @@ That is, function `f(n)` assigns to the input argument `n` the value obtained by
 As was the case with the logarithm function, the most common base for the exponential function in algorithm analysis is `b=2`. 
 
 
+## Asymptotic Analysis
+
+In algorithm analysis, we focus on the growth rate of the running time as a function of the input size `n`, taking a “big-picture” approach. 
+For example, it is often enough just to know that the running time of an algorithm grows proportionally to `n`.
+
+We analyze algorithms using a mathematical notation for functions that disregards constant factors. 
+Namely, we characterize the running times of algorithms by using functions that map the size of the input, `n`, 
+to values that correspond to the main factor that determines the growth rate in terms of `n`. 
+This approach reflects that each basic step in a pseudo-code description or a high-level language implementation 
+may correspond to a small number of primitive operations. Thus, we can perform an analysis of an algorithm by 
+estimating the number of primitive operations executed up to a constant factor, rather than getting bogged down 
+in language-specific or hardware-specific analysis of the exact number of operations that execute on the computer.
 
 
+### Big-Oh Notation
+
+Big Oh notation is a relative representation of the complexity of an algorithm.
+
+There are some important and deliberately chosen words in that sentence:
+- `relative`: you can only compare apples to apples. You can't compare an algorithm that does arithmetic multiplication to an algorithm that sorts a list of integers. 
+But a comparison of two algorithms to do arithmetic operations (one multiplication, one addition) will tell you something meaningful.
+
+- `representation`: BigOh (in its simplest form) reduces the comparison between algorithms to a single variable. 
+That variable is chosen based on observations or assumptions. For example, sorting algorithms are typically compared based on comparison operations (comparing two nodes to determine their relative ordering). 
+This assumes that comparison is expensive. But what if the comparison is cheap but swapping is expensive? It changes the comparison; and
+
+- `complexity`: if it takes me one second to sort 10,000 elements, how long will it take me to sort one million? 
+Complexity in this instance is a relative measure to something else.
+
+The big-Oh notation is used widely to characterize running times and space bounds in terms of some parameter `n`, 
+which varies from problem to problem, but is always defined as a chosen measure of the “size” of the problem.
+
+The seven functions listed in above are the most common functions used in conjunction with the big-Oh notation 
+to characterize the running times and space usage of algorithms. Indeed, we typically use the names of these 
+functions to refer to the running times of the algorithms they characterize. So, for example, we would say that 
+an algorithm that runs in worst-case time $4n^{2}$ + $nlogn$ is a quadratic-time algorithm, since it runs in $O(n^{2})$ time.
+Likewise, an algorithm running in time at most `5n + 20logn + 4` would be called a linear-time algorithm.
 
 
+### Big-Omega
 
+Just as the `big-Oh` notation provides an asymptotic way of saying that a function is “less than or equal to” 
+another function, the following notations provide an asymptotic way of saying that a function grows at a 
+rate that is “greater than or equal to” that of another.
+
+Let $f(n)$ and $g(n)$ be functions mapping positive integers to positive real numbers. 
+We say that $f(n)$ is $Ω(g(n))$, pronounced `“f(n) is big-Omega of g(n),”` if $g(n)$ is $O(f(n))$, 
+that is, there is a real constant $c > 0$ and an integer constant $n0 ≥ 1$ such that
+
+$f(n) ≥ cg(n)$, for `n ≥ n0`.
+
+This definition allows us to say asymptotically that one function is greater than or
+equal to another, up to a constant factor.
+
+
+### Big-Theta
+
+There is a notation that allows us to say that two functions grow at the same rate, up to constant factors. 
+We say that $f(n)$ is $Θ(g(n))$, pronounced `“f(n) is big-Theta of g(n),”` if $f(n)$ is $O(g(n))$ and $f(n)$ is $Ω(g(n))$, \
+that is, there are real constants `c′>0` and `c′′>0`, and an integer constant `n0 ≥ 1` such that
+
+$c′g(n) ≤ f (n) ≤ c′′g(n)$, for `n ≥ n0`.
 
 
 
