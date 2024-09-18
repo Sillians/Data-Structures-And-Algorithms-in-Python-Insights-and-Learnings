@@ -3,3 +3,4 @@ pydantic
 altair
 numpy
 pandas
+enum
