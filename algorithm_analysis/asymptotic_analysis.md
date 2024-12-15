@@ -1,11 +1,11 @@
-## Asymptotic Analysis
+# Asymptotic Analysis
 
 Asymptotic analysis is a branch of mathematics that deals with the behavior of functions when their arguments tend to infinity.
 It consists of asymptotic expansions, series, estimates and notations which are used to obtain an approximate solution or asymptotic solution for problems that cannot be solved exactly. 
 
 In general, asymptotic analysis is useful in understanding how certain mathematical objects behave under different conditions and parameters. This helps in predicting outcomes without having to go through long calculations or simulations.
 
-### Types Of Asymptotic Notations
+## Types Of Asymptotic Notations
 Asymptotic analysis is a mathematical technique used for understanding the behavior of algorithms as their input increases. It uses asymptotic notations to describe the growth rate or time complexity of an algorithm, which allows us to compare different algorithms and understand how they perform in realistic scenarios.
 
 The three most common types of asymptotic notation are `big O(O)`, `little o(o)` `Omega Notation` and `Big Theta notation (Θ)`.
@@ -18,7 +18,7 @@ These notations help us better understand the asymptotic behavior of algorithms 
 Asymptotic expansions and methods also allow us to analyze complex computations by breaking them down into simpler components, making mathematical analysis easier and more accurate. 
 Understanding these concepts helps provide insight into an algorithm's expected performance in terms of its time complexity and overall efficiency.
 
-1. Big O Notation: 
+### 1. Big O Notation: 
 
 Big O Notation is a mathematical notation used in the analysis of algorithms to describe their `time complexity`. 
 It allows for an estimation of the running time complexity, which can range from best and average cases to worst case 
@@ -39,7 +39,7 @@ will scale up over time and enable them to make more informed decisions about wh
 when developing software applications.
 
 
-2. Little O Notation:
+### 2. Little O Notation:
 
 Little o notation is a mathematical notation used in asymptotic analysis to measure an algorithm's complexity. 
 It is closely related to big O notation and is often used with regard to upper bounds, normal approximations, 
@@ -47,7 +47,7 @@ Taylor Series, Laplace Method or Euler Maclaurin Summation Formula. Little o not
 measuring the running time of algorithms such as binary search or Robbins-Monro Algorithm.
 
 
-3. Omega Notation ($\omega$): 
+### 3. Omega Notation ($\omega$): 
 
 Omega notation is a mathematical tool used in asymptotic analysis to describe the worst case running time of an 
 algorithm. It allows us to compare algorithms by approximating their average and worst case values, 
@@ -56,7 +56,7 @@ which the running time increases with respect to input size, using logarithmic f
 This makes it possible to predict how long a program will take in the most unfavorable circumstances (worst case scenario).
 
 
-4. Big Theta Notation ($\theta$): 
+### 4. Big Theta Notation ($\theta$): 
 
 Big theta notation is a mathematical unit used to describe asymptotic analysis. 
 It measures the approximate time complexity of an algorithm, and provides insight into how long it will take for 
