@@ -71,6 +71,16 @@ reaching a base case. In **DSA**, recursion simplifies the implementation of man
 
 ---
 
+### **Designing Recursive Algorithms**
+- **Test for base cases:** We begin by testing for a set of base cases (there should be at least one). 
+These base cases should be defined so that every possible chain of recursive calls will eventually reach a 
+base case, and the handling of each base case should not use recursion.
+
+- **Recur:** If not a base case, we perform one or more recursive calls. This recursive step may involve a 
+test that decides which of several possible recursive calls to make. We should define each possible recursive call so that it makes
+progress towards a base case.
+
+
 ### **Tips for Using Recursion**
 
 1. **Define a Clear Base Case**:
